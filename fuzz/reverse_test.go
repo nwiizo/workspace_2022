@@ -11,8 +11,14 @@ func FuzzReverse(f *testing.F) {
 		f.Add(tc) // Use f.Add to provide a seed corpus
 	}
 	f.Fuzz(func(t *testing.T, orig string) {
-		rev := Reverse(orig)
-		doubleRev := Reverse(rev)
+		rev, err1 := Reverse(orig)
+		if err1 != nil {
+			return
+		}
+		doubleRev, err2 := Reverse(rev)
+		if err2 != nil {
+			return
+		}
 		if orig != doubleRev {
 			t.Errorf("Before: %q, after: %q", orig, doubleRev)
 		}
