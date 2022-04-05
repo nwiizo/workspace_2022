@@ -1,6 +1,7 @@
 # Recommend Tech Book(O'Reilly Safari)
 - [Learning Dapr](https://learning.oreilly.com/library/view/learning-dapr/9781492072416/)
 - [Building Event-Driven Microservices](https://learning.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)
+- [Learning Domain-Driven Design](https://learning.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)
 
 
 # Recommend Tech Book 2021(O'Reilly Safari)
