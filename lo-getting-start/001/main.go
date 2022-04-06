@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	names := lo.Uniq[string]([]string{"Samuel", "Marc", "Samuel"})
+	arr := []string{"Samuel", "Marc", "Samuel"}
+	names := lo.Uniq[string](arr)
 	// []string{"Samuel", "Marc"}
 	fmt.Println(names)
 

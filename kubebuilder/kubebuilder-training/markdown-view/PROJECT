@@ -1,6 +1,0 @@
-domain: nwiizo.github.io
-layout:
-- go.kubebuilder.io/v3
-projectName: markdown-view
-repo: github.com/nwiizo/workspace_2022/kubebuilder/kubebuilder-training/markdown-view
-version: "3"

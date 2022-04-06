@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+  namespace: default
+  labels:
+    app: myapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+      annotations:
+        dapr.io/enabled: "true"
+        dapr.io/app-id: "myapp"
+        dapr.io/app-protocol: "grpc"
+        dapr.io/app-port: "5005"
