@@ -17,14 +17,13 @@ message Pancake {
 	//メニュー表
 	enum Menu{
 		UNKNOWN = 0;
-		CLASSIC= 1;
+		CLASSIC = 1;
 		BANANA_AND_WHIP = 2;
 		BACON_AND_CHEESE = 3;
 		MIX_BERRY = 4;
 		BAKED_MARSHMALLOW = 5;
 		SPICY_CURRY = 6;
 	}
-	
 	//シェフの名前
 	string chef_name = 1;
 	//メニュー
