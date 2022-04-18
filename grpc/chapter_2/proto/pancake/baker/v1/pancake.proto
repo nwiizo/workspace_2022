@@ -1,5 +1,5 @@
 syntax = "proto3";
-package pancake.baker;
+package proto.pancake.baker.v1;
 
 option go_package = "gen/api";
 
@@ -16,13 +16,13 @@ service PancakeBakerService {
 message Pancake {
 	//メニュー表
 	enum Menu{
-		UNKNOWN = 0;
-		CLASSIC = 1;
-		BANANA_AND_WHIP = 2;
-		BACON_AND_CHEESE = 3;
-		MIX_BERRY = 4;
-		BAKED_MARSHMALLOW = 5;
-		SPICY_CURRY = 6;
+		MENU_UNKNOWN_UNSPECIFIED = 0;
+		MENU_CLASSIC = 1;
+		MENU_BANANA_AND_WHIP = 2;
+		MENU_BACON_AND_CHEESE = 3;
+		MENU_MIX_BERRY = 4;
+		MENU_BAKED_MARSHMALLOW = 5;
+		MENU_SPICY_CURRY = 6;
 	}
 	//シェフの名前
 	string chef_name = 1;
