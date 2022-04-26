@@ -5,7 +5,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/nwiizo/workspace2022/grpc-tutorial/go/deepthought"
+	"github.com/nwiizo/workspace_2022/grpc-tutorial/go/deepthought/deepthought/v1"
 	"google.golang.org/grpc"
 )
 

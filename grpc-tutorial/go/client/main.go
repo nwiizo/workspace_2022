@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/nwiizo/workspace2022/go/deepthought"
+	"github.com/nwiizo/workspace_2022/grpc-tutorial/go/deepthought"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/keepalive"
