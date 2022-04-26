@@ -1,6 +1,8 @@
 syntax = "proto3";
-package deepthought;
-option go_package = "github.com/nwiizo/workspace2022/grpc-tutorial/go/deepthought";
+
+package deepthought.v1;
+
+option go_package = "github.com/nwiizo/workspace_2022/grpc-tutorial/go/deepthought";
 
 message BootRequest {
 }
