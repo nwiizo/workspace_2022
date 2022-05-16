@@ -33,7 +33,7 @@ KaaS桶狭間の戦い 〜Yahoo! JAPANのSLI/SLOを用いた統合監視〜
 - 組織にSREを実装していくまでの道のり(エウレカにおけるSREの取り組みの歴史)
 - プルリク作ったらデプロイされる仕組み on ECS
 - モダンとレガシーが混在するDMMブックスで培ったSRE Practices
-- SLO決定のためのArt of SLO
+- [SLO決定のためのArt of SLO](https://docs.google.com/presentation/d/e/2PACX-1vQuZan2U2cI-S0XTv6awv-52xyvR5opN2Y17eyTU4HlCBt3lrpqFxh7eQqk4cj8Bdqrf5aluKsbRF5C/pub?start=false&loop=false&delayms=3000&slide=id.g48a57ebc11_0_0)
 - [プロダクション環境の信頼性を損ねず観測する技術](https://speakerdeck.com/egmc/purotakusiyonhuan-jing-falsexin-lai-xing-wosun-nesuguan-ce-suruji-shu)
 - [長年運用されてきたモノリシックアプリケーションをコンテナ化しようとするとどんな問題に遭遇するか？](https://speakerdeck.com/nulabinc/sre-next-2022)
 - メルカリグループにおけるSREs
