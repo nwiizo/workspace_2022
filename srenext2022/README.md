@@ -30,13 +30,13 @@
 - [非ITの事業会社にSREと言わずにSREを持ち込んだ](https://speakerdeck.com/netmarkjp/fei-itfalseshi-ye-hui-she-nisretoyan-wazunisrewochi-tiip-nda)
 - [Sensible Incident Management for Software Startups](https://speakerdeck.com/takanabe/sre-next-2022-sensible-incident-management-for-software-startups)
 - [ZOZOTOWNのProduction Readiness Checklistと信頼性向上の取り組み](https://speakerdeck.com/akitok_/improvement-the-reliability-of-zozotown-with-production-- readiness-checklist)
-- 組織にSREを実装していくまでの道のり(エウレカにおけるSREの取り組みの歴史)
+- [組織にSREを実装していくまでの道のり(エウレカにおけるSREの取り組みの歴史)](https://speakerdeck.com/fukubaka0825/steps-toward-self-service-operations-in-eureka)
 - プルリク作ったらデプロイされる仕組み on ECS
 - モダンとレガシーが混在するDMMブックスで培ったSRE Practices
 - [SLO決定のためのArt of SLO](https://docs.google.com/presentation/d/e/2PACX-1vQuZan2U2cI-S0XTv6awv-52xyvR5opN2Y17eyTU4HlCBt3lrpqFxh7eQqk4cj8Bdqrf5aluKsbRF5C/pub?start=false&loop=false&delayms=3000&slide=id.g48a57ebc11_0_0)
 - [プロダクション環境の信頼性を損ねず観測する技術](https://speakerdeck.com/egmc/purotakusiyonhuan-jing-falsexin-lai-xing-wosun-nesuguan-ce-suruji-shu)
 - [長年運用されてきたモノリシックアプリケーションをコンテナ化しようとするとどんな問題に遭遇するか？](https://speakerdeck.com/nulabinc/sre-next-2022)
-- メルカリグループにおけるSREs
+- [メルカリグループにおけるSREs](https://speakerdeck.com/tcnksm/embedded-sre-at-mercari)
 - [Poolにおける開発の足を止めないシステム基盤構築](https://speakerdeck.com/winebarrel/poolniokeruzu-wozhi-menaisisutemuji-pan-gou-zhu)
 - 組織に対してSREを適用するとはどういうことか
 - [街じゅうを"駅前化"する電動マイクロモビリティのシェアサービス「LUUP」のIoTとSRE](https://speakerdeck.com/0gm/jie-ziyuuwo-yi-qian-hua-surudian-dong-maikuromobiriteifalsesieasabisu-luup-falseiottosre)
