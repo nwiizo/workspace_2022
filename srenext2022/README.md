@@ -29,7 +29,7 @@
 - 増大を続けるYahoo! JAPAN Kubernetesクラスタ群キャパシティ管理のモダン化
 - [非ITの事業会社にSREと言わずにSREを持ち込んだ](https://speakerdeck.com/netmarkjp/fei-itfalseshi-ye-hui-she-nisretoyan-wazunisrewochi-tiip-nda)
 - [Sensible Incident Management for Software Startups](https://speakerdeck.com/takanabe/sre-next-2022-sensible-incident-management-for-software-startups)
-- [ZOZOTOWNのProduction Readiness Checklistと信頼性向上の取り組み](https://speakerdeck.com/akitok_/improvement-the-reliability-of-zozotown-with-production--readiness-checklist)
+- [ZOZOTOWNのProduction Readiness Checklistと信頼性向上の取り組み](https://speakerdeck.com/akitok_/improvement-the-reliability-of-zozotown-with-production-readiness-checklist)
 - [組織にSREを実装していくまでの道のり(エウレカにおけるSREの取り組みの歴史)](https://speakerdeck.com/fukubaka0825/steps-toward-self-service-operations-in-eureka)
 - プルリク作ったらデプロイされる仕組み on ECS
 - モダンとレガシーが混在するDMMブックスで培ったSRE Practices
