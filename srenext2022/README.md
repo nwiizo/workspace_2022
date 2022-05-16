@@ -9,9 +9,9 @@
 - [1年間のポストモーテム運用と、そこから生まれたツールsre-advisor](https://speakerdeck.com/fujiwara3/1nian-jian-falseposutomotemuyun-yong-tosokokarasheng-maretaturu-sre-advisor)
 - [Kubernetesの上に作る、統一されたマイクロサービス運用体験](https://speakerdeck.com/tkuchiki/kubernetesfalseshang-nizuo-ru-tong-saretamaikurosabisuyun-yong-ti-yan)
 - LegalForceの契約データを脅かすリスクの排除と開発速度の向上をどうやって両立したか
-- SRE チーム立ち上げから1年。気づいたら SRE っぽくない仕事まで貢献しちゃってる説
+- [SRE チーム立ち上げから1年。気づいたら SRE っぽくない仕事まで貢献しちゃってる説](https://speakerdeck.com/bitkey/sre-timuli-tishang-kekara1nian-qi-tuitara-sre-tuhokunaishi-shi-mategong-xian-sitiyatuterushuo)
 - 6年で売上40億に成長したサービスのSREチーム結成〜運営
-- ニフティでSRE推進活動を始めて取り組んできたこと
+- [ニフティでSRE推進活動を始めて取り組んできたこと](https://speakerdeck.com/niftycorp/sre-next-2022)
 - [一人から始めるプロダクトSRE](https://speakerdeck.com/vtryo/how-to-start-sre-in-a-product-team-all-by-yourself)
 - [Steps toward self-service operations in eureka](https://speakerdeck.com/fukubaka0825/steps-toward-self-service-operations-in-eureka)
 - [成長を続ける組織でのSRE戦略：プレモーテムによる信頼性の認識共有](https://speakerdeck.com/niwatakeru/cheng-chang-wosok-keruzu-zhi-defalsesrezhan-lue-puremotemuniyoruxin-lai-xing-falseren-shi-gong-you-sre-next-2022)
