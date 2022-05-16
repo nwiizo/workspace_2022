@@ -2,9 +2,9 @@
 - [How We Foster “Reliability” in Diversity](https://speakerdeck.com/nari_ex/how-we-foster-reliability-in-diversity)
 SREの歩き方・進め方
 - [1,000万人以上が利用する「家族アルバム みてね」のSRE組織は4年間でどのように作られてきたのか](https://speakerdeck.com/isaoshimizu/sre-next-2022)
-KaaS桶狭間の戦い 〜Yahoo! JAPANのSLI/SLOを用いた統合監視〜
+- KaaS桶狭間の戦い 〜Yahoo! JAPANのSLI/SLOを用いた統合監視〜
 - [LINEのData Platform室が実践する大規模分散環境とキャパシティプランニング](https://speakerdeck.com/line_developers/linefalsedata-platformshi-gashi-jian-suruda-gui-mo-fen-san-huan-jing-falsecapacity-planning)
-事業の成長と共に歩む、ABEMA SRE探求の歴史
+- 事業の成長と共に歩む、ABEMA SRE探求の歴史
 - [TVerのサービスリニューアルにおける信頼性向上への取り組み](https://speakerdeck.com/techtver/20220514-sre-next-2022-how-tver-improved-system-reliability-in-service-renewal)
 - [1年間のポストモーテム運用と、そこから生まれたツールsre-advisor](https://speakerdeck.com/fujiwara3/1nian-jian-falseposutomotemuyun-yong-tosokokarasheng-maretaturu-sre-advisor)
 - [Kubernetesの上に作る、統一されたマイクロサービス運用体験](https://speakerdeck.com/tkuchiki/kubernetesfalseshang-nizuo-ru-tong-saretamaikurosabisuyun-yong-ti-yan)
