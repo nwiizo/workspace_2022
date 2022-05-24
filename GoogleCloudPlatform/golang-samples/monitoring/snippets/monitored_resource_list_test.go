@@ -26,6 +26,7 @@ func TestListMonitoredResources(t *testing.T) {
 	tc := testutil.SystemTest(t)
 
 	buf := &bytes.Buffer{}
+	listMonitoredResources(buf, "XXXXXXXX")
 	if err := listMonitoredResources(buf, tc.ProjectID); err != nil {
 		t.Fatalf("listMonitoredResources: %v", err)
 	}

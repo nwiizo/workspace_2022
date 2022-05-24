@@ -40,7 +40,7 @@ func main() {
 	}
 
 	// Sets your Google Cloud Platform project ID.
-	projectID := "metis-335900"
+	projectID := "YOUR_PROJECT_ID"
 
 	// Prepares an individual data point
 	dataPoint := &monitoringpb.Point{

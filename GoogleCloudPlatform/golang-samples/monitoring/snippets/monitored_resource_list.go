@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package snippets contains examples of using the monitoring API.
-package main
+package snippets
 
 // [START monitoring_list_resources]
 
@@ -40,8 +40,7 @@ func listMonitoredResources(w io.Writer, projectID string) error {
 		Name: "projects/" + projectID,
 	}
 	iter := c.ListMonitoredResourceDescriptors(ctx, req)
-	fmt.Println(iter)
-	fmt.Println("start")
+
 	for {
 		resp, err := iter.Next()
 		if err == iterator.Done {
@@ -54,12 +53,6 @@ func listMonitoredResources(w io.Writer, projectID string) error {
 	}
 	fmt.Fprintln(w, "Done")
 	return nil
-}
-
-func main() {
-	var s string = "metis-test"
-	var w io.Writer
-	listMonitoredResources(w, s)
 }
 
 // [END monitoring_list_resources]
