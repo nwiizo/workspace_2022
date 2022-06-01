@@ -1,0 +1,147 @@
+openapi: "3.0.0"
+info:
+  title: Banking API
+  version: "1.0"
+  description: A simple banking API
+
+paths:
+  /transactions/{transactionId}:
+    patch:
+      parameters:
+        - name: transactionId
+          description: Id of the transaction to update
+          schema: 
+            type: string
+          in: path
+          required: true
+      requestBody:
+        content:
+          "application/json":
+            schema:
+              $ref: "#/components/schemas/UpdateTransaction"
+      summary: Updates a transaction
+      responses:
+        "200":
+          description: Transaction has been updated
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/Transaction"
+        "400":
+          description: Transaction has not been updated to to error in request
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Transaction not found
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/Error"
+  /transactions:
+    patch:
+      summary: Updates multiple transactions
+      requestBody:
+        content:
+          "application/json":
+            schema:
+              $ref: "#/components/schemas/UpdateTransactions"      
+      responses:
+        "207":
+          description: Multi-status response
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/UpdateTransactionsResponse"
+        "400":
+          description: Bad Request
+components:
+  schemas:
+    UpdateTransaction:
+      properties:
+        comment:
+          type: string
+          example: My new Ibanez electric guitar
+        customCategory:
+          type: string
+          example: Music Gear
+        checked:
+          type: boolean
+          description: checking a transaction is similar to marking en email as read
+    
+    Transaction:
+      allOf:
+        - required:
+          - id
+          - amount
+          - date
+          properties:
+            id:
+              type: string
+            amount:
+              type: number
+            date:
+              type: string
+              format: date
+            label:
+              type: string
+            category:
+              type: string
+        - $ref: "#/components/schemas/UpdateTransaction"
+
+    Error:
+      properties:
+        message:
+          type: string
+        errors:
+          type: array
+          items:
+            properties:
+              source:
+                type: string
+              type:
+                type: string
+              message:
+                type: string
+
+    UpdateTransactions:
+      required:
+        - items
+      properties:
+        items:
+          type: array
+          items:
+            allOf:
+              - required:
+                  - id
+                properties:
+                  id:
+                    type: string
+                    description: Transaction id
+              - $ref: "#/components/schemas/UpdateTransaction"
+    
+    UpdateTransactionsResponse:
+      properties:
+        items:
+          type: array
+          items:
+            properties:
+              status:
+                type: string
+                description: The HTTP status
+                example: 404 Not Found
+              headers:
+                additionalProperties:
+                  type: string
+                description: HTTP headers map of string
+                example:
+                  My-Custom-Header: CUSTOM_VALUE
+                  Another-Custom-Header: ANOTHER_CUSTOM_VALUE
+              body:
+                description: Transaction if status is 200 OK, Error otherwise
+                oneOf:
+                 - $ref: "#/components/schemas/Error"
+                 - $ref: "#/components/schemas/Transaction"
+                example:
+                  message: Transaction T135 not found

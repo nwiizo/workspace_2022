@@ -1,0 +1,75 @@
+openapi: "3.0.0"
+info:
+  title: Banking API
+  version: "1.0"
+  description: A simple banking API
+tags:
+  - name: Transfer
+    description: Everything you need to transfer money
+components:
+  securitySchemes:
+    ConceptActionBasedSecurity:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: "https://auth.bankingcompany.com/authorize"
+          scopes:
+            "beneficiary:create": Create beneficiaries
+            "beneficiary:read": List beneficiaries
+            "beneficiary:delete": delete beneficiaries
+    ArbitraryBasedSecurity:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: "https://auth.bankingcompany.com/authorize"
+          scopes:
+            "beneficiary:manage": Create, list and beneficiaries
+
+paths:
+  /beneficiaries:
+    get:
+      tags:
+        - Transfer
+      description: Gets beneficiaries list
+      security:
+        - ConceptActionBasedSecurity:
+          - "beneficiary:read"
+        - ArbitraryBasedSecurity:
+          - "beneficiary:manage"
+      responses:
+        "200":
+          description: The beneficiaries list
+    post:
+      tags:
+        - Transfer
+      security:
+        - ConceptActionBasedSecurity:
+          - "beneficiary:create"
+        - ArbitraryBasedSecurity:
+          - "beneficiary:manage"
+      description: Adds a money transfer beneficiary
+      responses:
+        "201":
+          description: Beneficiary added
+  /beneficiaries/{id}:
+    parameters:
+      - name: id
+        in: path
+        description: Beneficiary's id
+        required: true
+        schema:
+          type: string
+    get:
+      tags:
+        - Transfer
+      description: Gets a beneficiary
+      responses:
+        "200":
+          description: The beneficiary
+    delete:
+      tags:
+        - Transfer
+      description: Deletes a beneficiary
+      responses:
+        "204":
+          description: Beneficiary deleted

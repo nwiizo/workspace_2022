@@ -1,0 +1,552 @@
+openapi: "3.0.0"
+
+info:
+  title: Banking API
+  version: "1.0.0"
+  description: |
+    The Banking API provides access to the [Banking Company](http://www.bankingcompany.com) services, which include bank account information, beneficiaries, and money transfer management.
+
+    # Authentication
+
+    ## How to 
+    - Register
+    - Create an APP
+    - Request credentials
+
+    # Use cases
+
+    ## Transferring money to an account or preexisting beneficiary
+
+    The _transfer money_ operation allows one to transfer an `amount` of money from a `source` account to a `destination` account or beneficiary.
+    In order to use an appropriate `source` and `destination`, we recommend to use _list sources_ and _list source's destinations_ as shown in the figure below (instead of using _list accounts_ and _list beneficiaries_).
+
+    ![Diagram](http://localhost:9090/12.2-operation-manual-diagram.svg)
+
+    ## Cancelling a delayed or recurring money transfer
+
+    - List money transfers: To list existing money transfers and select the one to delete
+    - Cancel a money transfer: To cancel the selected money transfer
+
+    # Change log
+
+    ## 2018-06-01
+
+    Initial version:
+
+    - List account
+    - Get account
+
+    ## 2018-08-14
+
+    - Added: Transfer money
+
+    ## 2019-03-25
+    
+    - Deprecated: _list admin transfers_ replaced by list transfers (can still be used to ensure backward compatibility) 
+    - Added: _list transfers_ for all users (customers and admins)
+
+  contact:
+    name: The Banking API team
+    email: api@bankingcompany.com
+    url: developer.bankingcompany.com
+
+tags:
+  - name: Transfers
+    description: Everything you need to manage money transfers. A money transfer consists in transferring money from a source account to a destination account.
+  - name: Beneficiaries
+    description: Everything you need to manage money transfer beneficiaries. Beneficiaries are pre-registred external accounts that can be used as destinations for money transfers.
+
+paths:
+  /accounts:
+    get:
+      deprecated: true
+      tags:
+        - Accounts
+      summary: List accounts
+      responses:
+        "200":
+          description: User's accounts
+          content:
+            "application/json":
+              schema:
+                required:
+                  - properties
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Account"
+  /accounts/{id}:
+    get:
+      tags:
+        - Accounts
+      summary: Get an account
+      parameters:
+        - name: id
+          in: path
+          description: Account's id
+          required: true
+          schema:
+            type: string
+          deprecated: true
+      responses:
+        "200":
+          description: The account
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/Account"
+      x-implementation:
+        security:
+          description: |
+            Only accounts belonging to user referenced in security data;
+            return a 404 if this is not the case
+          source:
+            system: security
+            location: jwt.sub
+          fail: 404
+
+  /beneficiaries:
+    post:
+      tags:
+        - Beneficiaries
+      summary: Register a beneficiary
+      security:
+        - BankingAPIScopes:
+          - "beneficiary:create"
+          - "beneficiary:admin"
+      responses:
+        "201":
+          description: Beneficiary added
+    get:
+      tags:
+        - Beneficiaries
+      summary: List beneficiaries
+      security:
+        - BankingAPIScopes:
+          - "beneficiary:read"
+          - "beneficiary:admin"
+      responses:
+        "200":
+          description: The beneficiaries list
+  /beneficiaries/{id}:
+    parameters:
+      - name: id
+        in: path
+        description: Beneficiary's id
+        required: true
+        schema:
+          type: string
+    delete:
+      tags:
+        - Beneficiaries
+      summary: Delete a beneficiary
+      security:
+        - BankingAPIScopes:
+          - "beneficiary:delete"
+          - "beneficiary:admin"
+      responses:
+        "204":
+          description: Beneficiary deleted
+    get:
+      tags:
+        - Beneficiaries
+      summary: Get a beneficiary
+      security:
+        - BankingAPIScopes:
+          - "beneficiary:read"
+          - "beneficiary:admin"
+      responses:
+        "200":
+          description: The beneficiary
+  /sources:
+    get:
+      summary: List transfer sources
+      tags:
+        - Transfers
+      description: |
+        Not all bank accounts can be used as a source
+        for a money transfers. This operation returns
+        only the accounts elligible as a money transfer
+        source.
+      responses:
+        "200":
+          description: The transfer sources
+  /sources/{id}/destinations:
+    parameters:
+      - name: id
+        in: path
+        description: Source's id
+        required: true
+        schema:
+          type: string
+    get:
+      summary: List transfer source's destinations
+      tags:
+        - Transfers
+      description: |
+        Depending on the source account, only specific
+        beneficiaries or accounts can be used as a money
+        transfer destination.
+        This operation returns them.
+      responses:
+        "200":
+          description: The transfer destination
+  /admin-transfers:
+    get:
+      summary: List money transfers for admins
+      tags:
+        - Transfers
+      description: Redirects to get /transfers
+      deprecated: true
+      responses:
+        "200":
+            description: Transfers list
+            content:
+              "application/json":
+                schema:
+                  $ref: "#/components/schemas/TransferList"
+  /transfers:
+    post:
+      summary: Transfer money
+      security:
+        - BankingAPIScopes:
+          - "transfer:create"
+          - "transfer:admin"
+      tags:
+        - Transfers
+      description: |
+        This operation allows one to transfer an `amount` of money from a `source` account to a `destination` account.
+        There are three different types of money transfer:
+          - Immediate -- these are executed as soon as the request is received 
+          - Delayed -- these are executed upon a given future `date`
+          - Recurring -- these are executed a given `occurrences` number of times at a given `frequency` -- the first occurrence being executed immediately or at a given `date`
+      requestBody:
+        content:
+          "application/json":
+            schema:
+              $ref: "#/components/schemas/TransferRequest"
+            examples:
+              immediate:
+                summary: Immediate transfer
+                description: The money transfer is executed immediately
+                value:
+                  source": "000534115776675"
+                  destination: "000567689879878"
+                  amount: 456.2
+              delayed:
+                summary: Delayed transfer
+                description: The money transfer is executed at a given date
+                value:
+                  source": "000534115776675"
+                  destination: "000567689879878"
+                  amount: 456.2
+                  date: "2019-03-19"
+              recurring:
+                summary: Recurring transfer
+                description: The money transfer is executed at a given date reurringly
+                value:
+                  source": "000534115776675"
+                  destination: "000567689879878"
+                  amount: 456.2
+                  date: "2019-03-19"
+                  occurrences: 1
+                  frequency: "MONTHLY"
+      responses:
+        201:
+          description: Immediate or recurring transfer executed
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/TransferResponse"
+              examples:
+                immediate:
+                  summary: Immediate transfer
+                  description: The money transfer is executed immediately
+                  value:
+                    source": "000534115776675"
+                    destination: "000567689879878"
+                    amount: 456.2
+                recurring:
+                  summary: Recurring transfer
+                  description: The first occurence is executed immediately
+                  value:
+                    source": "000534115776675"
+                    destination: "000567689879878"
+                    amount: 456.2
+                    date: "2019-03-19"
+                    occurrences: 1
+                    frequency: "MONTHLY"
+        202:
+          description: Delayed or recurring delayed transfer accepted
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/TransferResponse"
+              examples:
+                delayed:
+                  summary: Delayed transfer
+                  description: The money transfer is executed at a given date
+                  value:
+                    source": "000534115776675"
+                    destination: "000567689879878"
+                    amount: 456.2
+                    date: "2019-03-19"
+                recurring:
+                  summary: Recurring transfer
+                  description: The money transfer is executed at a given date reurringly
+                  value:
+                    source": "000534115776675"
+                    destination: "000567689879878"
+                    amount: 456.2
+                    date: "2019-03-19"
+                    occurrences: 1
+                    frequency: "MONTHLY"
+        400:
+          description: |
+            The transfer is rejected due to an error in the request properties or an insufficient balance.
+            Each error provides the property `source` of the error along with a human-readable `message` and its `type`:
+  
+            - MANDATORY_PROPERTY: The property indicated in `source` is missing
+            - INVALID_FORMAT: The format of the property indicated in `source` is invalid
+            - INVALID_VALUE: The value of the property indicated in `source` is invalid
+            - INSUFFICIENT_BALANCE: The `amount` property is higher than the `source` account balance
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/ConsumerError"
+    get:
+      summary: List money transfers
+      description: List transfers accessible to the user attached to security data. Customers only see the transfers they have created, admin users can access all transfers.
+      tags:
+        - Transfers
+      security:
+        - BankingAPIScopes:
+          - "transfer:read"
+          - "transfer:admin"
+      parameters:
+        - name: t
+          in: query
+          description: replaced by type
+          deprecated: true
+          schema:
+            type: string
+        - name: type
+          in: query
+          description: transfer type
+          schema:
+            type: string
+      responses:
+        200:
+          description: Transfers list
+          content:
+            "application/json":
+              schema:
+                $ref: "#/components/schemas/TransferList"
+  /transfers/{id}:
+    parameters:
+      - name: id
+        in: path
+        description: Transfer's id
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Get a money transfer
+      tags:
+        - Transfers
+      security:
+        - BankingAPIScopes:
+          - "transfer:read"
+          - "transfer:admin"
+      responses:
+        200:
+          description: The money transfer
+        404:
+          description: The money transfer does not exist
+    delete:
+      summary: Cancel a money transfer
+      tags:
+        - Transfers
+      security:
+        - BankingAPIScopes:
+          - "transfer:delete"
+          - "transfer:admin"
+      description: Only delayed or recurring money transfer can be canceled
+      responses:
+        204:
+          description: The money transfer has been deleted
+        404:
+          description: The money transfer does not exist
+
+components:
+  securitySchemes:
+    BankingAPIScopes:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: "https://auth.bankingcompany.com/authorize"
+          scopes:
+            "transfer:create": Create transfers
+            "transfer:read": Read transfers
+            "transfer:delete": Delete transfers
+            "transfer:admin": Create, read, and delete transfers
+            "beneficiary:create": Create beneficiaries
+            "beneficiary:read": List beneficiaries
+            "beneficiary:delete": delete beneficiaries
+            "beneficiary:admin": Create, read, and delete beneficiaries
+            "account:read": Read accounts
+            "account:admin": Read accounts
+  schemas:
+    TransferRequest:
+      description: A money transfer request
+      required:
+        - source
+        - destination
+        - amount
+      properties:
+        source:
+          type: string
+          description: Source account number
+          minLength: 15
+          maxLength: 15
+          pattern: ^\d{15}$
+          example: "000534115776675"
+        destination:
+          type: string
+          description: Destination account number
+          minLength: 15
+          maxLength: 15
+          pattern: ^\d{15}$
+          example: "000567689879878"
+        amount:
+          type: number
+          example: 456.2
+          minimum: 0
+          exclusiveMinimum: true
+        date:
+          type: string
+          format: date
+          description: |
+            Execution date for a delayed transfer
+            or first execution date for a recurring one
+          example: "2019-03-19"
+        occurrences:
+          type: integer
+          description: |
+            Number of times a recurring transfer will be executed
+          example: 2
+          minimum: 2
+          maximum: 100
+        frequency:
+          type: string
+          description: Frequency of recurring transfer's execution
+          example: MONTHLY
+          enum:
+              - WEEKLY
+              - MONTHLY
+              - QUARTERLY
+              - YEARLY
+    TransferResponse:
+      allOf:
+        - required:
+            - id
+            - type
+            - status
+          properties:
+            id:
+              type: string
+              example: "1611e71f-1bb2-412f-8c43-92b275a5c321"
+            type:
+              type: string
+              enum:
+                - IMMEDIATE
+                - DELAYED
+                - RECURRING
+              example: RECURRING
+            status:
+              type: string
+              description: |
+                An immediate transfer is always `EXECUTED`, a delayed transfer can be `EXECUTED` or `PENDING` and a recurring one is always `PENDING`
+              enum:
+                - EXECUTED
+                - PENDING
+              example: PENDING
+            requestDate:
+              type: string
+              example: "2019-09-19"
+        - $ref: "#/components/schemas/TransferRequest"
+    TransferList:
+      properties:
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/TransferResponse"
+    ConsumerError:
+      required:
+        - errors
+      properties:
+        errors:
+          description: A list of errors providing detailed information about the problem
+          type: array
+          minItems: 1
+          items:
+            required:
+              - source
+              - type
+              - message
+            properties:
+              source:
+                description: the property source of the error
+                type: string
+                example: "amount"
+                enum:
+                  - source
+                  - destination
+                  - amount
+                  - date
+                  - occurrences
+                  - frequency
+              type:
+                type: string
+                example: "MANDATORY_PROPERTY"
+                enum:
+                  - MANDATORY_PROPERTY
+                  - INVALID_FORMAT
+                  - INVALID_VALUE
+                  - INSUFFICIENT_BALANCE
+              message:
+                description: a human-readable error message
+                type: string
+                example: "The money transfer's amount must be provided"
+    Account:
+      properties:
+        balance:
+          description: The balance in the account's default currency
+          type: object
+          title: Amount
+          required:
+            - value
+            - currency
+          properties:
+            value:
+              description: Balance's value using the number of decimal places defined by ISO 4217
+              externalDocs:
+                description: Decimal places table
+                url: https://www.currency-iso.org/en/home/tables/table-a1.html
+              type: number
+              x-implementation:
+                description: The real time balance (not the daily one!)
+                source:
+                  system: Core Banking
+                  data: ZBAL0.RTBAL
+            currency:
+              description: An ISO 4217 code
+              externalDocs:
+                url: https://www.iso.org/iso-4217-currency-codes.html
+              type: string
+              example: USD
+              x-implementation:
+                source:
+                  system: Core Banking
+                  data: ZBAL0.RTCUR

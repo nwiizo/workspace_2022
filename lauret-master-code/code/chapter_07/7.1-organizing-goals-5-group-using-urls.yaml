@@ -1,0 +1,110 @@
+openapi: "3.0.0"
+info:
+  title: Banking API
+  version: "1.0"
+  description: A simple banking API
+tags:
+  - name: Account
+    description: Everything you need to visualize accounts
+  - name: Transfer
+    description: Everything you need to transfer money
+paths:
+  /account/accounts:
+    get:
+      tags:
+        - Account
+      summary: Gets accounts list
+      responses:
+        "200":
+          description: User's accounts
+  /account/accounts/{id}:
+    get:
+      tags:
+        - Account
+      summary: Gets an account
+      parameters:
+        - name: id
+          in: path
+          description: Account's id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: The account
+  /transfer/transfers:
+    get:
+      tags:
+        - Transfer
+      summary: Gets transfers list
+      responses:
+        "200":
+          description: The transfers list
+    post:
+      tags:
+        - Transfer
+      summary: Transfers money
+      responses:
+        "201":
+          description: Immediate transfer request done
+        "202":
+          description: Delayed transfer pending
+  /transfer/transfers/{id}:
+    parameters:
+      - name: id
+        in: path
+        description: Transfer's id
+        required: true
+        schema:
+          type: string
+    get:
+      tags:
+        - Transfer
+      description: Gets a transfer
+      responses:
+        "200":
+          description: The transfer
+    delete:
+      tags:
+        - Transfer
+      description: Deletes a transfer
+      responses:
+        "204":
+          description: Transfer deleted
+  /transfer/beneficiaries:
+    get:
+      tags:
+        - Transfer
+      description: Gets beneficiaries list
+      responses:
+        "200":
+          description: The beneficiaries list
+    post:
+      tags:
+        - Transfer
+      description: Adds a money transfer beneficiary
+      responses:
+        "201":
+          description: Beneficiary added
+  /transfer/beneficiaries/{id}:
+    parameters:
+      - name: id
+        in: path
+        description: Beneficiary's id
+        required: true
+        schema:
+          type: string
+    get:
+      tags:
+        - Transfer
+      description: Gets a beneficiary
+      responses:
+        "200":
+          description: The beneficiary
+    delete:
+      tags:
+        - Transfer
+      description: Deletes a beneficiary
+      responses:
+        "204":
+          description: Beneficiary deleted

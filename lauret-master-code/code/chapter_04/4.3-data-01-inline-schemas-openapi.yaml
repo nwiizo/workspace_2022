@@ -1,0 +1,120 @@
+openapi: "3.0.0"
+info:
+  title: Shopping API
+  version: "1.0"
+paths:
+  /products:
+    description: The products catalog
+    get:
+      summary: Search products
+      description: |
+        Search products in catalog
+        using a free query parameter
+      parameters:
+        - name: free-query
+          description: |
+            A product's name, reference or
+            partial description
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Products matching free query
+          content:
+            application/json:
+              schema:
+                type: array
+                description: Array of Product
+                items:
+                  type: object
+                  description: A Product
+                  required:
+                    - reference
+                    - name
+                    - price
+                    - supplier
+                  properties:
+                    reference:
+                      description: |
+                        unique ID identifying
+                        a product
+                      type: string
+                    name:
+                      type: string
+                    price:
+                      description: in USD
+                      type: number
+                    description:
+                      type: string
+                    supplier:
+                      type: object
+                      description: Product's supplier
+                      required:
+                        - reference
+                        - name
+                      properties:
+                        reference:
+                          type: string
+                        name:
+                          type: string
+    post:
+      summary: Add product
+      description: |
+        Add product's parameter to catalog
+      requestBody:
+        description: Product's information
+        content:
+          application/json:
+            schema:
+              required:
+                - name
+                - price
+                - supplierReference
+              properties:
+                name:
+                  type: string
+                price:
+                  type: number
+                description:
+                  type: string
+                supplierReference:
+                  type: string
+      responses:
+        "200":
+          description: |
+            Product added to catalog
+          content:
+            application/json:
+              schema:
+                type: object
+                description: Added Product
+                required:
+                  - reference
+                  - name
+                  - price
+                  - supplier
+                properties:
+                  reference:
+                    description: |
+                      unique ID identifying
+                      a product
+                    type: string
+                  name:
+                    type: string
+                  price:
+                    description: in USD
+                    type: number
+                  description:
+                    type: string
+                  supplier:
+                    type: object
+                    description: Product's supplier
+                    required:
+                      - reference
+                      - name
+                    properties:
+                      reference:
+                        type: string
+                      name:
+                        type: string

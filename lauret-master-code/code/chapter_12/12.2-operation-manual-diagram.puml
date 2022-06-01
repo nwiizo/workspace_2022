@@ -1,0 +1,32 @@
+@startuml
+
+skinparam ActivityBackgroundColor white
+skinparam ActivityBorderColor black
+skinparam ArrowColor black
+skinparam NoteBackgroundColor black
+skinparam NoteBorderColor black
+skinparam NoteFontName monospace
+skinparam NoteFontStyle bold
+skinparam NoteFontColor white
+
+:I want to transfer money;
+#Black:**<color white>List sources</color>** >
+note right:GET /sources
+:I select a source account;
+#Black:**<color white>List source's destinations</color>** >
+note right #black
+GET /sources/{selected source account number}/destinations
+end note
+:I select a destination;
+:I choose an amount;
+#Black:**<color white>Transfer money</color>** >
+note right
+POST /transfers
+{
+  "source": "{selected source account id}",
+  "destination": "{selected destination id}",
+  "amount": "{chosen amount}"
+}
+end note
+
+@enduml
