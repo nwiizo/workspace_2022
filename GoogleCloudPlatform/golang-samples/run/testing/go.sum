@@ -73,6 +73,8 @@ github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-2022060908403
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20220609084039-bc188447282d/go.mod h1:4msqJ6rGNovCfkzbQm4y3ZK86S6Eh0rUuQzv+XfpJ+A=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20211008220018-553d451c8611 h1:RUxi8sMYg3uFhaSCbAVimUGxNw29xuBidTND0lo2Nb8=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20211008220018-553d451c8611/go.mod h1:mcvWe0F0ATMIWfeuJ0fW2iJr0UbC66DLemGg3sgyl6Y=
+github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20220609084039-bc188447282d h1:3j0R2XKYHu/lS+xwQPXUY9glG5DvGtaTWG6ZlrUuMrU=
+github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20220609084039-bc188447282d/go.mod h1:ufUpMsqtQYTZS8rcsCZvPTgULg7gOGvb7SZgYJtLrU8=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/bmatcuk/doublestar/v2 v2.0.4/go.mod h1:QMmcs3H2AUQICWhfzLXz+IYln8lRQmTZRptLie8RgRw=
@@ -573,6 +575,7 @@ google.golang.org/genproto v0.0.0-20210921142501-181ce0d877f6/go.mod h1:5CzLGKJ6
 google.golang.org/genproto v0.0.0-20210924002016-3dee208752a0/go.mod h1:5CzLGKJ67TSI2B9POpiiyGha0AjJvZIUgRMt1dSmuhc=
 google.golang.org/genproto v0.0.0-20211016002631-37fc39342514/go.mod h1:5CzLGKJ67TSI2B9POpiiyGha0AjJvZIUgRMt1dSmuhc=
 google.golang.org/genproto v0.0.0-20211118181313-81c1377c94b1/go.mod h1:5CzLGKJ67TSI2B9POpiiyGha0AjJvZIUgRMt1dSmuhc=
+google.golang.org/genproto v0.0.0-20211203200212-54befc351ae9/go.mod h1:5CzLGKJ67TSI2B9POpiiyGha0AjJvZIUgRMt1dSmuhc=
 google.golang.org/genproto v0.0.0-20211206160659-862468c7d6e0/go.mod h1:5CzLGKJ67TSI2B9POpiiyGha0AjJvZIUgRMt1dSmuhc=
 google.golang.org/genproto v0.0.0-20211208223120-3a66f561d7aa/go.mod h1:5CzLGKJ67TSI2B9POpiiyGha0AjJvZIUgRMt1dSmuhc=
 google.golang.org/genproto v0.0.0-20211221195035-429b39de9b1c/go.mod h1:5CzLGKJ67TSI2B9POpiiyGha0AjJvZIUgRMt1dSmuhc=
