@@ -5,19 +5,19 @@ go 1.18
 require (
 	cloud.google.com/go/monitoring v1.5.0
 	contrib.go.opencensus.io/exporter/stackdriver v0.13.12
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220204002944-f20d8abe1519
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
 	github.com/golang/protobuf v1.5.2
 	github.com/prometheus/client_golang v1.12.1
 	go.opencensus.io v0.23.0
 	google.golang.org/api v0.79.0
-	google.golang.org/genproto v0.0.0-20220505152158-f39f71e6c8f3
+	google.golang.org/genproto v0.0.0-20220518221133-4f43b3371335
 )
 
 require (
 	cloud.google.com/go v0.100.2 // indirect
 	cloud.google.com/go/compute v1.6.1 // indirect
-	cloud.google.com/go/iam v0.1.1 // indirect
-	cloud.google.com/go/storage v1.19.0 // indirect
+	cloud.google.com/go/iam v0.3.0 // indirect
+	cloud.google.com/go/storage v1.22.1 // indirect
 	cloud.google.com/go/trace v1.2.0 // indirect
 	github.com/aws/aws-sdk-go v1.44.13 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -27,6 +27,7 @@ require (
 	github.com/google/go-cmp v0.5.8 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.4.0 // indirect
+	github.com/googleapis/go-type-adapters v1.0.0 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
