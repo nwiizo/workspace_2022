@@ -137,10 +137,10 @@ github.com/stretchr/testify v1.3.0 h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
-github.com/travisjeffery/go-dynaport v0.0.0-20171218080632-f8768fb615d5 h1:YWS6vlR2944x27HYI+jyiNvCHBad0/Xz/+89AKsM4/I=
-github.com/travisjeffery/go-dynaport v0.0.0-20171218080632-f8768fb615d5/go.mod h1:0LHuDS4QAx+mAc4ri3WkQdavgVoBIZ7cE9ob17KIAJk=
-github.com/travisjeffery/raft-boltdb v0.0.0-20201002143322-bc94ee46437b h1:QGR8+O5fX1jVaxDPFWiiFOrqBVa9i96NycJcAYzGUmU=
-github.com/travisjeffery/raft-boltdb v0.0.0-20201002143322-bc94ee46437b/go.mod h1:WHHSVX8ecnmfwvDrhRF5QI+It11LTLPBwhKKTWbQAGc=
+github.com/nwiizo/workspace_2022/go-dynaport v0.0.0-20171218080632-f8768fb615d5 h1:YWS6vlR2944x27HYI+jyiNvCHBad0/Xz/+89AKsM4/I=
+github.com/nwiizo/workspace_2022/go-dynaport v0.0.0-20171218080632-f8768fb615d5/go.mod h1:0LHuDS4QAx+mAc4ri3WkQdavgVoBIZ7cE9ob17KIAJk=
+github.com/nwiizo/workspace_2022/raft-boltdb v0.0.0-20201002143322-bc94ee46437b h1:QGR8+O5fX1jVaxDPFWiiFOrqBVa9i96NycJcAYzGUmU=
+github.com/nwiizo/workspace_2022/raft-boltdb v0.0.0-20201002143322-bc94ee46437b/go.mod h1:WHHSVX8ecnmfwvDrhRF5QI+It11LTLPBwhKKTWbQAGc=
 github.com/tv42/httpunix v0.0.0-20150427012821-b75d8614f926/go.mod h1:9ESjWnEqriFuLhtthL60Sar/7RFoluCcXsuvEwTV5KM=
 github.com/tysontate/gommap v0.0.0-20190103205956-899e1273fb5c h1:551Cm4YNqmckBc0maTSsNhcTZGhhbOlWDwBVMMlS2eA=
 github.com/tysontate/gommap v0.0.0-20190103205956-899e1273fb5c/go.mod h1:D/qzp3BypYxGri+RgzDSv3Fml0qkzA85BPPwrNNYbSs=

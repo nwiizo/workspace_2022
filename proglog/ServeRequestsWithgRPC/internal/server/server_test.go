@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	api "github.com/travisjeffery/proglog/api/v1"
-	"github.com/travisjeffery/proglog/internal/log"
+	api "github.com/nwiizo/workspace_2022/proglog/api/v1"
+	"github.com/nwiizo/workspace_2022/proglog/internal/log"
 	"google.golang.org/grpc"
 )
 

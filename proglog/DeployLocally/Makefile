@@ -65,6 +65,6 @@ compile:
 TAG ?= 0.0.1
 
 build-docker:
-	docker build -t github.com/travisjeffery/proglog:$(TAG) .
+	docker build -t github.com/nwiizo/workspace_2022/proglog:$(TAG) .
 
 # END: build_docker

@@ -66,7 +66,7 @@
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -76,7 +76,7 @@
       <working_directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/agent" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/agent" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -86,7 +86,7 @@
       <working_directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/membership" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/membership" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -96,7 +96,7 @@
       <working_directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/server" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/server" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -106,7 +106,7 @@
       <working_directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/server" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/../../CoordinateWithConsensus/internal/server" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />

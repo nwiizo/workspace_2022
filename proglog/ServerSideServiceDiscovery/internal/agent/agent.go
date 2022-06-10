@@ -10,11 +10,11 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	api "github.com/travisjeffery/proglog/api/v1"
-	"github.com/travisjeffery/proglog/internal/auth"
-	"github.com/travisjeffery/proglog/internal/log"
-	"github.com/travisjeffery/proglog/internal/discovery"
-	"github.com/travisjeffery/proglog/internal/server"
+	api "github.com/nwiizo/workspace_2022/proglog/api/v1"
+	"github.com/nwiizo/workspace_2022/proglog/internal/auth"
+	"github.com/nwiizo/workspace_2022/proglog/internal/log"
+	"github.com/nwiizo/workspace_2022/proglog/internal/discovery"
+	"github.com/nwiizo/workspace_2022/proglog/internal/server"
 )
 
 type Agent struct {

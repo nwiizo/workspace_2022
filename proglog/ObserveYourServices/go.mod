@@ -1,4 +1,4 @@
-module github.com/travisjeffery/proglog
+module github.com/nwiizo/workspace_2022/proglog
 
 require (
 	contrib.go.opencensus.io/exporter/prometheus v0.2.0 // indirect
@@ -13,7 +13,7 @@ require (
 	github.com/lib/pq v1.3.0 // indirect
 	github.com/mattn/go-sqlite3 v2.0.3+incompatible // indirect
 	github.com/stretchr/testify v1.4.0
-	github.com/travisjeffery/go-dynaport v0.0.0-20171218080632-f8768fb615d5 // indirect
+	github.com/nwiizo/workspace_2022/go-dynaport v0.0.0-20171218080632-f8768fb615d5 // indirect
 	github.com/tysontate/gommap v0.0.0-20190103205956-899e1273fb5c
 	go.opencensus.io v0.22.2
 	go.uber.org/zap v1.10.0

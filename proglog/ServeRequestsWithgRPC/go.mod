@@ -1,4 +1,4 @@
-module github.com/travisjeffery/proglog
+module github.com/nwiizo/workspace_2022/proglog
 
 go 1.13
 

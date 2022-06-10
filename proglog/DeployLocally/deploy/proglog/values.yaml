@@ -1,6 +1,6 @@
 # Default values for proglog.
 image:
-  repository: github.com/travisjeffery/proglog
+  repository: github.com/nwiizo/workspace_2022/proglog
   tag: 0.0.1
   pullPolicy: IfNotPresent
 serfPort: 8401

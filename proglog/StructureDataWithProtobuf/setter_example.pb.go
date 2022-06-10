@@ -6,7 +6,7 @@ package setter_example
 import (
 	fmt "fmt"
 	proto "github.com/gogo/protobuf/proto"
-	_ "github.com/travisjeffery/protoc-gen-setter"
+	_ "github.com/nwiizo/workspace_2022/protoc-gen-setter"
 	math "math"
 )
 

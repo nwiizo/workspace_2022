@@ -47,7 +47,7 @@
       <working_directory value="$PROJECT_DIR$/../../../code/SecureYourServices/internal/log" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/../../../code/SecureYourServices/internal/log" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -57,7 +57,7 @@
       <working_directory value="$PROJECT_DIR$/../../../code/SecureYourServices/internal/server" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/../../../code/SecureYourServices/internal/server" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />

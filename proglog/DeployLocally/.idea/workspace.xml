@@ -71,17 +71,17 @@
       <working_directory value="$PROJECT_DIR$/internal/agent" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/internal/agent" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/travisjeffery/proglog/internal/loadbalance" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go test github.com/nwiizo/workspace_2022/proglog/internal/loadbalance" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="CoordinateWithConsensus" />
       <working_directory value="$PROJECT_DIR$/../internal/loadbalance" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/travisjeffery/proglog/internal/loadbalance" />
+      <package value="github.com/nwiizo/workspace_2022/proglog/internal/loadbalance" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -91,7 +91,7 @@
       <working_directory value="$PROJECT_DIR$/internal/loadbalance" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/internal/loadbalance" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -101,7 +101,7 @@
       <working_directory value="$PROJECT_DIR$/internal/log" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/internal/log" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -111,7 +111,7 @@
         <item itemvalue="Go Test.go test agent" />
         <item itemvalue="Go Test.go test log" />
         <item itemvalue="Go Test.go test loadbalance" />
-        <item itemvalue="Go Test.go test github.com/travisjeffery/proglog/internal/loadbalance" />
+        <item itemvalue="Go Test.go test github.com/nwiizo/workspace_2022/proglog/internal/loadbalance" />
       </list>
     </recent_temporary>
   </component>

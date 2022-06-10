@@ -25,10 +25,10 @@ import (
 
 	// END: imports
 
-	api "github.com/travisjeffery/proglog/api/v1"
-	"github.com/travisjeffery/proglog/internal/auth"
-	"github.com/travisjeffery/proglog/internal/config"
-	"github.com/travisjeffery/proglog/internal/log"
+	api "github.com/nwiizo/workspace_2022/proglog/api/v1"
+	"github.com/nwiizo/workspace_2022/proglog/internal/auth"
+	"github.com/nwiizo/workspace_2022/proglog/internal/config"
+	"github.com/nwiizo/workspace_2022/proglog/internal/log"
 )
 
 // START: flag

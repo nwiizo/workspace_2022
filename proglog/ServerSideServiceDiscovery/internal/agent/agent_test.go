@@ -11,13 +11,13 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/travisjeffery/go-dynaport"
+	"github.com/nwiizo/workspace_2022/go-dynaport"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	api "github.com/travisjeffery/proglog/api/v1"
-	"github.com/travisjeffery/proglog/internal/agent"
-	"github.com/travisjeffery/proglog/internal/config"
+	api "github.com/nwiizo/workspace_2022/proglog/api/v1"
+	"github.com/nwiizo/workspace_2022/proglog/internal/agent"
+	"github.com/nwiizo/workspace_2022/proglog/internal/config"
 )
 
 // END: imports

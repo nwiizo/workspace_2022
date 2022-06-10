@@ -33,7 +33,7 @@
       <go_parameters value="-i -race" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -44,7 +44,7 @@
       <go_parameters value="-i -race" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />

@@ -40,7 +40,7 @@
       <working_directory value="$PROJECT_DIR$/internal/agent" />
       <framework value="gotest" />
       <kind value="FILE" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/internal/agent/agent_test.go" />
       <method v="2" />
@@ -51,7 +51,7 @@
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -62,7 +62,7 @@
       <go_parameters value="-race" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/internal/agent" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -72,7 +72,7 @@
       <working_directory value="$PROJECT_DIR$/internal/log" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/internal/log" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -82,7 +82,7 @@
       <working_directory value="$PROJECT_DIR$/internal/membership" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/internal/membership" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -92,7 +92,7 @@
       <working_directory value="$PROJECT_DIR$/internal/server" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
-      <package value="github.com/travisjeffery/proglog" />
+      <package value="github.com/nwiizo/workspace_2022/proglog" />
       <directory value="$PROJECT_DIR$/internal/server" />
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
