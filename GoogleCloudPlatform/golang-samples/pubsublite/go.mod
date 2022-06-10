@@ -6,10 +6,9 @@ require (
 	cloud.google.com/go/kms v1.1.0 // indirect
 	cloud.google.com/go/pubsub v1.17.1
 	cloud.google.com/go/pubsublite v1.2.2
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220204002944-f20d8abe1519
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
 	github.com/google/go-cmp v0.5.7
 	github.com/google/uuid v1.3.0
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	google.golang.org/api v0.67.0
-	google.golang.org/grpc v1.44.0 // indirect
+	google.golang.org/api v0.74.0
 )
