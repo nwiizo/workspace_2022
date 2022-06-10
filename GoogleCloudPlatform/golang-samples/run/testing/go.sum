@@ -69,6 +69,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20211008220018-553d451c8611 h1:lZC9nFR0575VCMyXFuhXJiZVYJ7jqHxSNJhnMH29QNE=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20211008220018-553d451c8611/go.mod h1:QcyY6M/i07PTFC27fyeDRoWQbjA7kgpoDdIXaHx7iKU=
+github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20220609084039-bc188447282d h1:v7t6ejfXUI+fEH0pSwGONn+UEPR4Ox9qqnvcBKr6Eu4=
+github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20220609084039-bc188447282d/go.mod h1:4msqJ6rGNovCfkzbQm4y3ZK86S6Eh0rUuQzv+XfpJ+A=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20211008220018-553d451c8611 h1:RUxi8sMYg3uFhaSCbAVimUGxNw29xuBidTND0lo2Nb8=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20211008220018-553d451c8611/go.mod h1:mcvWe0F0ATMIWfeuJ0fW2iJr0UbC66DLemGg3sgyl6Y=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
