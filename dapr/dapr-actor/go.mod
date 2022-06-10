@@ -6,7 +6,7 @@ require (
 	github.com/dapr/go-sdk v1.3.1
 	github.com/oklog/ulid/v2 v2.0.2
 	github.com/pkg/errors v0.9.1
-	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f
 )
 
 require (
