@@ -9,7 +9,7 @@ require (
 	github.com/hashicorp/go-msgpack v0.5.5 // indirect
 	github.com/hashicorp/serf v0.8.5
 	github.com/stretchr/testify v1.4.0
-	github.com/nwiizo/workspace_2022/go-dynaport v0.0.0-20171218080632-f8768fb615d5
+	github.com/nwiizo/workspace_2022/go-dynaport 4caaf3247bc7
 	github.com/tysontate/gommap v0.0.0-20190103205956-899e1273fb5c
 	go.opencensus.io v0.22.4
 	go.uber.org/zap v1.10.0
