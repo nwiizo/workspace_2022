@@ -1,0 +1,9 @@
+# https://slack.com/services/new/incoming-webhook
+global:
+  slack_api_url: ''
+route:
+  receiver: 'slack'
+receivers:
+  - name: 'slack'
+    slack_configs:
+    - channel: '#333_metis_notify_test'

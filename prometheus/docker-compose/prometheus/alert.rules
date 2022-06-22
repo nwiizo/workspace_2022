@@ -1,0 +1,19 @@
+groups:
+- name: example
+  rules:
+  - alert: InstanceDown # インスタンスダウンのアラート
+    expr: up == 0 # アラート条件(PromQL)
+    for: 1m # 1分間条件を満たしていた場合にアラートを出す
+    labels:
+      severity: page
+    annotations:
+      summary: "Instance {{ $labels.instance }} down"
+      description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minutes."
+  - alert: HighMemory # メモリ使用率のアラート
+    expr: ((node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes) * 100 >= 50 # アラート条件(PromQL)
+    for: 1m # 1分間条件を満たしていた場合にアラートを出す
+    labels:
+      severity: warning
+    annotations:
+      summary: "High Memory Usage"
+      description: "{{ $labels.instance }} of job {{ $labels.job }} use High Memory"
