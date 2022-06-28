@@ -9,6 +9,30 @@ services:
       - "--config.file=/etc/prometheus/prometheus.yml"
     ports:
       - '9090:9090'
+  node_prometheus:
+    image: prom/prometheus
+    container_name: node_prometheus
+    volumes:
+      - ./node:/etc/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    ports:
+      - '9191:9090'
+  blackbox_exporter:
+    image: prom/blackbox-exporter:latest
+    container_name: blackbox_exporter
+    # not useing
+    #volumes:
+    #  - ./blackbox_exporter:/etc/blackbox_exporter
+    ports:
+      - '9115:9115'
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - 3000:3000
+    env_file:
+      - grafana/grafana.env
   pushgateway:
     image: prom/pushgateway
     container_name: pushgateway
