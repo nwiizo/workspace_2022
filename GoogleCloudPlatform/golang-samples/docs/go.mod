@@ -12,8 +12,8 @@ require (
 	github.com/mailjet/mailjet-apiv3-go v0.0.0-20201009050126-c24bc15a9394
 	github.com/sendgrid/smtpapi-go v0.6.7 // indirect
 	github.com/tinylib/msgp v1.1.6 // indirect
-	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5
-	google.golang.org/api v0.74.0
+	golang.org/x/oauth2 v0.0.0-20220630143837-2104d58473e0
+	google.golang.org/api v0.84.0
 	google.golang.org/appengine v1.6.7
 	google.golang.org/appengine/v2 v2.0.1
 	gopkg.in/sendgrid/sendgrid-go.v2 v2.0.0

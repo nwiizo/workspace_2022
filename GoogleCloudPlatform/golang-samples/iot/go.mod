@@ -9,6 +9,6 @@ require (
 	github.com/eclipse/paho.mqtt.golang v1.3.5
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/uuid v1.3.0
-	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5
-	google.golang.org/api v0.74.0
+	golang.org/x/oauth2 v0.0.0-20220630143837-2104d58473e0
+	google.golang.org/api v0.84.0
 )
