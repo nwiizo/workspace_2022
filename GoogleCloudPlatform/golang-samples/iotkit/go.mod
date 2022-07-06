@@ -2,4 +2,4 @@ module github.com/GoogleCloudPlatform/golang-samples/iotkit
 
 go 1.15
 
-require golang.org/x/exp v0.0.0-20211008200323-95152d363a1c
+require golang.org/x/exp v0.0.0-20220706164943-b4a6d9510983
