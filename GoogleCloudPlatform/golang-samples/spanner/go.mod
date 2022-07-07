@@ -7,7 +7,7 @@ require (
 	cloud.google.com/go/kms v1.4.0
 	cloud.google.com/go/spanner v1.30.1
 	contrib.go.opencensus.io/exporter/stackdriver v0.13.10
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a
 	github.com/golang/protobuf v1.5.2
 	github.com/google/uuid v1.3.0
 	github.com/googleapis/gax-go/v2 v2.3.0

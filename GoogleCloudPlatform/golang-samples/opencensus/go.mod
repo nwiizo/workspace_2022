@@ -8,7 +8,7 @@ require (
 	cloud.google.com/go/spanner v1.25.0
 	cloud.google.com/go/trace v1.0.0 // indirect
 	contrib.go.opencensus.io/exporter/stackdriver v0.13.5
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a
 	github.com/golang/protobuf v1.5.2
 	go.opencensus.io v0.23.0
 	golang.org/x/exp v0.0.0-20211008200323-95152d363a1c

@@ -5,7 +5,7 @@ go 1.15
 require (
 	cloud.google.com/go/kms v1.1.0 // indirect
 	cloud.google.com/go/pubsub v1.3.1
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a
 	github.com/eclipse/paho.mqtt.golang v1.3.5
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/uuid v1.3.0

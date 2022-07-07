@@ -5,7 +5,7 @@ go 1.18
 require (
 	cloud.google.com/go/monitoring v1.5.0
 	contrib.go.opencensus.io/exporter/stackdriver v0.13.12
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a
 	github.com/golang/protobuf v1.5.2
 	github.com/prometheus/client_golang v1.12.1
 	go.opencensus.io v0.23.0

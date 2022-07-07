@@ -6,7 +6,7 @@ require (
 	cloud.google.com/go/bigquery v1.26.0
 	cloud.google.com/go/iam v0.3.0
 	cloud.google.com/go/storage v1.22.1
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a
 	github.com/gofrs/uuid v3.4.0+incompatible
 	github.com/golang/protobuf v1.5.2
 	github.com/google/uuid v1.3.0
