@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	cloud.google.com/go/bigtable v1.12.0
-	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d
+	github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a
 	github.com/google/go-cmp v0.5.7
 	github.com/google/uuid v1.3.0
 	google.golang.org/api v0.74.0
