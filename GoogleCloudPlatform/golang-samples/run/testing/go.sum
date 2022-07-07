@@ -71,6 +71,8 @@ github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-2021100822001
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20211008220018-553d451c8611/go.mod h1:QcyY6M/i07PTFC27fyeDRoWQbjA7kgpoDdIXaHx7iKU=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20220609084039-bc188447282d h1:v7t6ejfXUI+fEH0pSwGONn+UEPR4Ox9qqnvcBKr6Eu4=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20220609084039-bc188447282d/go.mod h1:4msqJ6rGNovCfkzbQm4y3ZK86S6Eh0rUuQzv+XfpJ+A=
+github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20220706222004-113bab98e20a h1:REWtb+pq9V9eo5dZLFqlrnO5toznoOOMZLDT6EEN9+k=
+github.com/GoogleCloudPlatform/golang-samples/run/grpc-ping v0.0.0-20220706222004-113bab98e20a/go.mod h1:4msqJ6rGNovCfkzbQm4y3ZK86S6Eh0rUuQzv+XfpJ+A=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20211008220018-553d451c8611 h1:RUxi8sMYg3uFhaSCbAVimUGxNw29xuBidTND0lo2Nb8=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20211008220018-553d451c8611/go.mod h1:mcvWe0F0ATMIWfeuJ0fW2iJr0UbC66DLemGg3sgyl6Y=
 github.com/GoogleCloudPlatform/golang-samples/run/grpc-server-streaming v0.0.0-20220609084039-bc188447282d h1:3j0R2XKYHu/lS+xwQPXUY9glG5DvGtaTWG6ZlrUuMrU=
