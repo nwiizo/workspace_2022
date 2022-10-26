@@ -1,3 +1,4 @@
+// https://docs.dagger.io/sdk/go
 package main
 
 import (
