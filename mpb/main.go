@@ -11,7 +11,6 @@ import (
 func main() {
 	// initialize progress container, with custom width
 	p := mpb.New(mpb.WithWidth(64))
-
 	total := 100
 	name := "Single Bar:"
 	// create a single bar, which will inherit container's width

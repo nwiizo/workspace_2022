@@ -1,0 +1,54 @@
+.DS_Store
+
+# Terraform Compiled files
+terraform.tfvars
+terraform.tfstate.backup
+terraform.tfstate**
+.terraform.tfstate*
+.terraform.lock.hcl
+**.terraform*
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+plan
+plan.json
+cleanup.sh
+.*.yaml
+.debug.local.sh
+.ssh-*
+.env*
+.temp/
+
+.vscode
+*.err
+credentials_file.json
+.kitchen
+**ci-abm*.json
+out.json
+
+files.log
+legacy_headder_check.log
+new_header_check.log
+admin-openrc.sh
+
+### VS Code ###
+.vscode/
+
+### IntelliJ ###
+.idea/
+
+### Python
+.python-version
+.pytest_cache
+__pycache__
+*.data
+
+# APIGee samples specific ignores
+new_policy.yaml
+
+# Service Account Key files
+anthos-bm-owner.json
+abm-sa-temp.json
+bm-gcr.json
+ssh-metadata
