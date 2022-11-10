@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "config:base",
+    ":semanticCommits"
+  ],
+  "ignorePaths": [
+    "**/anthos-multi-cloud/**",
+    "**/anthos-bm-openstack-terraform/**"
+  ],
+  "prConcurrentLimit":5,
+  "stabilityDays":7,
+  "labels": ["dependencies"],
+    "vulnerabilityAlerts":{
+     "labels":[
+       "type:security"
+     ],
+     "stabilityDays":0
+  }
+}
