@@ -4,7 +4,7 @@
 - [Learning Domain-Driven Design](https://learning.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)
 
 
-# Recommend Tech Book 2021(O'Reilly Safari)
+# Recommend Tech Book 2022(O'Reilly Safari)
 - [Cloud Native Go](https://learning.oreilly.com/library/view/cloud-native-go/9781492076322/)
 - [Programming Google Cloud](https://learning.oreilly.com/library/view/programming-google-cloud/9781492089025/)
 - [Software Engineering at Google](https://learning.oreilly.com/library/view/software-engineering-at/9781492082781/)
