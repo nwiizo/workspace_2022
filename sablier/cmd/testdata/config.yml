@@ -1,0 +1,20 @@
+provider:
+  name: configfile
+server:
+  port: 1111
+  base-path: /configfile/
+storage:
+  file: /tmp/configfile.json
+sessions:
+  default-duration: 1h
+  expiration-interval: 1h
+logging:
+  level: trace
+strategy:
+  dynamic:
+    custom-themes-path: /tmp/configfile/themes
+    show-details-by-default: false
+    default-theme: configfile
+    default-refresh-frequency: 1h
+  blocking:
+    default-timeout: 1h
