@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 )
 
@@ -13,6 +14,7 @@ func main() {
 	fp, err := os.Open(filename)
 	if err != nil {
 		// エラー処理
+		log.Fatalf("Error when opening file: %s", err)
 		fmt.Println("ファイルがないんじゃーーーい🐶")
 	}
 	defer fp.Close()
@@ -26,5 +28,6 @@ func main() {
 
 	if err = scanner.Err(); err != nil {
 		// エラー処理
+		log.Fatalf("Error while reading file: %s", err)
 	}
 }
