@@ -1,0 +1,3 @@
+metadata:
+  annotations:
+    traefik.ingress.kubernetes.io/router.middlewares: default-code-server-sablier@kubernetescrd

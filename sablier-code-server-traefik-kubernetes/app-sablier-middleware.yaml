@@ -1,0 +1,16 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: code-server-sablier
+  namespace: default
+spec:
+  plugin:
+    sablier:
+      names: deployment_default_code-server-deployment_1
+      sablierUrl: 'http://sablier:10000'
+      sessionDuration: 2m
+      dynamic:
+        displayName: 'Code Server Demo'
+        showDetails: true
+        theme: hacker-terminal
+        refreshFrequency: 5s
