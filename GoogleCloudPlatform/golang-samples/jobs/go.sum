@@ -80,6 +80,8 @@ github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220204002944-f20d8abe1519
 github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220204002944-f20d8abe1519/go.mod h1:r7/PGjoVuxgavVjQlamYZ5JcibrQtI9HaZ2hqlB765E=
 github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d h1:y0UYi97iviSzZsuRgnol2WA1RUXJRpgWUt7w0rXAkGM=
 github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d/go.mod h1:bZoOrkdsYeoaLAlXBSof4Fxxg/X8mazRa/L+8OES+S8=
+github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a h1:Trm0DcRX8GYRQ+dCyPmiVFkrO3682VlSpAn4X59021w=
+github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a/go.mod h1:bZoOrkdsYeoaLAlXBSof4Fxxg/X8mazRa/L+8OES+S8=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/bmatcuk/doublestar/v2 v2.0.4/go.mod h1:QMmcs3H2AUQICWhfzLXz+IYln8lRQmTZRptLie8RgRw=

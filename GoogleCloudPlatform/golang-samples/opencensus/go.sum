@@ -89,6 +89,8 @@ github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220204002944-f20d8abe1519
 github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220204002944-f20d8abe1519/go.mod h1:r7/PGjoVuxgavVjQlamYZ5JcibrQtI9HaZ2hqlB765E=
 github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d h1:y0UYi97iviSzZsuRgnol2WA1RUXJRpgWUt7w0rXAkGM=
 github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220609084039-bc188447282d/go.mod h1:bZoOrkdsYeoaLAlXBSof4Fxxg/X8mazRa/L+8OES+S8=
+github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a h1:Trm0DcRX8GYRQ+dCyPmiVFkrO3682VlSpAn4X59021w=
+github.com/GoogleCloudPlatform/golang-samples v0.0.0-20220706222004-113bab98e20a/go.mod h1:bZoOrkdsYeoaLAlXBSof4Fxxg/X8mazRa/L+8OES+S8=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/Shopify/sarama v1.19.0/go.mod h1:FVkBWblsNy7DGZRfXLU0O9RCGt5g3g3yEuWXgklEdEo=
