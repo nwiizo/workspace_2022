@@ -22,6 +22,6 @@ require (
 	launchpad.net/gocheck v0.0.0-20140225173054-000000000087 // indirect
 )
 
-replace github.com/hashicorp/raft-boltdb => github.com/nwiizo/workspace_2022/raft-boltdb v0.0.0-20201002143322-bc94ee46437b
+replace github.com/hashicorp/raft-boltdb => github.com/nwiizo/workspace_2022/raft-boltdb 5657bc0fc921
 
 go 1.13
